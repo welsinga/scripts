@@ -37,7 +37,7 @@ android.applicationVariants.all { variant ->
     project.task("generate${variant.name.capitalize()}SourcesJar", type: Jar) {
         classifier = 'sources'
 
-        description = 'Assembles a jar archive containing the main sources of $variant.name..'
+        description = 'Assembles a jar archive containing the main sources of $variant.name.'
 
         destinationDir = new File("$project.buildDir/libs/")
 
@@ -51,7 +51,7 @@ android.applicationVariants.all { variant ->
     project.task("generate${variant.name.capitalize()}ProguardFilesJar", type: Zip) {
         classifier 'proguard'
         
-        description = 'Assembles a jar archive containing the Proguard files of $variant.name..'
+        description = 'Assembles a jar archive containing the Proguard files of $variant.name.'
         
         destinationDir = new File("$project.buildDir/libs/")
         from "$project.buildDir/outputs/mapping"
