@@ -1,4 +1,4 @@
 scripts
 =======
 
-Repo containing beautiful/handy shell scripts
+Repo containing beautiful/handy scripts
